@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import './ImageGalleryItem.css';
 
 const ImageGalleryItem = ({ image, onShowModal, onShowImage }) => {
@@ -16,6 +17,15 @@ const ImageGalleryItem = ({ image, onShowModal, onShowImage }) => {
       />
     </li>
   );
+};
+
+ImageGalleryItem.propTypes = {
+  image: PropTypes.shape({
+    webformatURL: PropTypes.string,
+    tags: PropTypes.string,
+  }),
+  onShowModal: PropTypes.func.isRequired,
+  onShowImage: PropTypes.func.isRequired,
 };
 
 export default ImageGalleryItem;

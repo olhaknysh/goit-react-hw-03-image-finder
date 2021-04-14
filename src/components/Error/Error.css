@@ -1,0 +1,7 @@
+.Error {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  color: red;
+  font-weight: bold;
+}
